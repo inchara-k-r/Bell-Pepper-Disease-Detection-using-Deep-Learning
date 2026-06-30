@@ -1,97 +1,89 @@
-# Chip-To-Crop
-AI-powered plant disease detection and precision spraying drone using YOLO and Deep Learning.
-# 🌾 Chip To Crop – Intelligent Precision Spraying Drone
+# 🌿 Bell Pepper Disease Detection using Deep Learning
 
-## Overview
-
-Chip To Crop is an AI-powered precision agriculture system that combines plant disease detection with automated pesticide/fertilizer spraying.
-
-The system uses a custom-trained YOLO model to identify diseased crops in real time. Once a disease is detected, the spraying mechanism is activated automatically, enabling targeted treatment and reducing chemical wastage.
+An AI-powered image classification system that detects diseases in bell pepper leaves using Deep Learning and Transfer Learning techniques. The model is trained on approximately **8,500 images** and helps identify plant diseases for smarter and more efficient agricultural practices.
 
 ---
 
-## Features
+## 📌 Project Overview
 
-* Real-time plant disease detection using YOLO
-* Live webcam/video feed analysis
-* Automatic spray triggering for infected plants
-* Flask-based monitoring dashboard
-* Plant health analytics
-* Precision agriculture support
-* Scalable for drone integration
+Early detection of plant diseases is essential for improving crop quality and reducing agricultural losses. This project uses Convolutional Neural Networks (CNNs) along with Transfer Learning models to classify bell pepper leaf images into healthy and diseased categories with high accuracy.
 
 ---
 
-## Technology Stack
+## 🚀 Features
 
-### AI & Deep Learning
-
-* YOLO (Ultralytics)
-* Python
-* OpenCV
-
-### Backend
-
-* Flask
-
-### Frontend
-
-* HTML
-* CSS
-* JavaScript
-
-### Hardware Integration
-
-* Drone-based spraying system
-* Camera sensor
-* GPS-enabled precision spraying
+- 🌱 Detects diseases in Bell Pepper leaves
+- 🧠 Deep Learning-based image classification
+- 📷 Trained on ~8,500 leaf images
+- 🔄 Data preprocessing and augmentation
+- ⚡ Transfer Learning using ResNet50 and MobileNetV2
+- 📊 Achieved approximately **98% accuracy**
+- 📈 Evaluated using Precision, Recall, F1-Score, and Accuracy
 
 ---
 
-## Project Architecture
+## 🛠️ Tech Stack
 
-Camera Feed
-↓
-YOLO Disease Detection
-↓
-Disease Classification
-↓
-Decision Engine
-↓
-Precision Spray Activation
-↓
-Monitoring Dashboard
-
------
-
-
-## Future Improvements
-
-* GPS-based autonomous navigation
-* Drone flight controller integration
-* IoT-based farm monitoring
-* Cloud dashboard
-* Multi-crop disease support
-
------
-
-## Team
-
-Tech Fighters
-
-* Inchara K R
-* P Tejaswini
-* Sahana Haragapure
-* Bharath R K
-* K Sai Krishna
-* Varadharajula Nishant
+- Python
+- TensorFlow / Keras
+- NumPy
+- Pandas
+- Matplotlib
+- OpenCV
+- Scikit-learn
 
 ---
 
-## Impact
+## 📂 Dataset
 
-* Reduces chemical wastage
-* Improves crop health
-* Saves labor costs
-* Enables precision agriculture
-* Increases farming efficiency
+- Approximately **8,500 Bell Pepper leaf images**
+- Contains healthy and diseased leaf samples
+- Images were preprocessed before training
+
+### Preprocessing Steps
+
+- Image Resizing
+- Normalization
+- Train-Test Split
+- Data Augmentation
+
+---
+
+## 🔄 Data Augmentation
+
+To improve model generalization and reduce overfitting, the following augmentation techniques were applied:
+
+- Random Rotation
+- Horizontal Flip
+- Vertical Flip
+- Zoom
+- Width & Height Shift
+- Brightness Adjustment
+- Shearing
+
+---
+
+## 🧠 Deep Learning Models
+
+### ResNet50
+- Transfer Learning
+- Fine-tuned on Bell Pepper dataset
+
+### MobileNetV2
+- Lightweight architecture
+- Faster inference
+- Suitable for real-time deployment
+
+---
+
+## 📊 Model Performance
+
+| Metric | Score |
+|---------|-------|
+| Accuracy | ~98% |
+| Precision | High |
+| Recall | High |
+| F1-Score | High |
+
+The model demonstrated strong classification performance and generalized well on unseen test images.
+
